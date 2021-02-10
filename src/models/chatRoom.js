@@ -8,6 +8,6 @@ const chatRoomSchema = new mongoose.Schema({
     versionKey: false
 });
 
-const chatRoom = mongoose.model('chatRoom', chatRoomSchema)
+const chatRoom = mongoose.model('chatRoom', chatRoomSchema);
 
 module.exports = chatRoom;
