@@ -17,6 +17,7 @@ db.once("open", function () {
 
 const index = require("./routes/index");
 const user = require("./routes/userRoute");
+const chatRoom = require("./routes/chatRoomRoute");
 
 app.use(bodyParser.json());
 
@@ -31,6 +32,8 @@ app.use(function (req, res, next) {
 
 app.use("/", index);
 app.use("/user", user);
+app.use("/chatRoom", chatRoom);
+
 
 
 module.exports = app;

@@ -1,8 +1,9 @@
-const express = require("express")
-const router = express.Router()
-const controller = require("../controllers/chatRoomController")
+const express = require("express");
+const router = express.Router();
+const controller = require("../controllers/chatRoomController");
 
-router.get("/", controller.getAll)
+router.get("/", controller.getAllchatRoom);
+router.get("/:id", controller.getByIdchatRoom);
 
 
-module.exports = router
+module.exports = router;
